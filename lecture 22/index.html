@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: rgb(165, 42, 140);
+            --custon-width: 100px;
+        }
+        .container{
+            background-color: rgb(255, 255, 217);
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            
+            background-color: rgb(6, 149, 232);
+            height: 330px;
+            width: var(--custom-width);
+            margin: 5px ;
+            padding:5px ;
+            border: 2px solid black;
+            /* box-shadow: 10px 15px yellow; */   
+            /*  x offset y offset color
+            /* box-shadow: 10px 15px 20px brown; */
+            /*x offset y offset blur radius spread radius color*/
+            /* box-shadow: 10px 15px 5px 10px brown; */
+            /* box-shadow: inset 10px 15px brown; */
+            /* box-shadow: 10px 15px yellow ,15px 20px var(--primary-color); */
+            
+            
+        }
+        #head1{
+            /* text-shadow: 2px 3px 1px yellowgreen; */
+            /* text-shadow: pink 12px 13px 2px; */
+            /* text-shadow: blue 3px 4px ; */
+            /* text-shadow: 4px 5px; */
+            text-shadow: 2px 5px 0px red, 
+               4px 5px 0px green, 
+               5px 6px 0px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Image_1.png">
+            <h2  id="head1">Welcome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nesciunt nisi ullam. Eius ad perferendis, id similique nemo obcaecati, sunt omnis nulla illum laborum soluta sed eligendi doloremque quisquam!</p>
+        </div>
+    </div>
+</body>
+</html>
